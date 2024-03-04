@@ -1138,6 +1138,12 @@ template {
   line-height: 15px;
   color: #bdbdbd;
 }
+.modal__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 @media (max-width: 1200px) {
   .container {

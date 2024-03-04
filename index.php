@@ -80,7 +80,7 @@
               </a>
             </div>
             <!-- /.booking__call-center -->
-            <button class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
           <div class="map">
@@ -235,4 +235,37 @@
     </div>
     <!-- /.container -->
   </section>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Image: Close">
+      </a>
+      <h3 class="modal__title">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form">
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Your Full Name*"
+          name="name"
+        >
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Phone Number*"
+          name="phone"
+        >
+        <textarea 
+          class="message modal__message" 
+          placeholder="Message"
+          name="message"
+        ></textarea>
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   <?php include('footer.php')?>

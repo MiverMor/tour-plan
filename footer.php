@@ -142,7 +142,7 @@
               name="phone"
             >
             <textarea 
-              class="footer__message" 
+              class="message footer__message" 
               placeholder="Message"
               name="message"
             ></textarea>
@@ -156,6 +156,7 @@
     </div>
     <!-- /.container -->
   </footer>
+  <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>

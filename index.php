@@ -243,18 +243,28 @@
         <img src="img/close.svg" alt="Image: Close">
       </a>
       <h3 class="modal__title">Booking</h3>
-      <form action="send.php" method="POST" class="modal__form">
+      <form action="send.php" method="POST" class="modal__form form">
         <input 
           type="text" 
           class="input modal__input" 
           placeholder="Your Full Name*"
           name="name"
+          required
+          minlength='2'
         >
         <input 
           type="text" 
           class="input modal__input" 
           placeholder="Phone Number*"
           name="phone"
+          required
+        >
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Your Email*"
+          name="email"
+          required
         >
         <textarea 
           class="message modal__message" 
@@ -269,3 +279,4 @@
   </div>
   <!-- /.modal -->
   <?php include('footer.php')?>
+  

@@ -128,19 +128,28 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input 
-              type="text" 
-              class="input footer__input" 
-              placeholder="Your Full Name*"
-              name="name"
-            >
-            <input 
-              type="text" 
-              class="input footer__input" 
-              placeholder="Phone Number*"
-              name="phone"
-            >
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input 
+                type="text" 
+                class="input footer__input" 
+                placeholder="Your Full Name*"
+                name="name"
+                required
+                minlength='2'
+              >
+            </div>
+            <!-- /.footer__input-group -->
+            <div class="footer__input-group">
+              <input 
+                type="text" 
+                class="input footer__input" 
+                placeholder="Phone Number*"
+                name="phone"
+                required
+              >
+            </div>
+            <!-- /.footer__input-group -->
             <textarea 
               class="message footer__message" 
               placeholder="Message"
@@ -156,10 +165,12 @@
     </div>
     <!-- /.container -->
   </footer>
+  
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

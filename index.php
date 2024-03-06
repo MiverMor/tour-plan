@@ -186,7 +186,7 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img 
             src="img/activity-1.jpg" 
             alt="The curious corner of chamarel" 
@@ -197,7 +197,7 @@
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img 
             src="img/activity-2.jpg" 
             alt="Gymkhana club golf course" 
@@ -208,7 +208,7 @@
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img 
             src="img/activity-3.jpg" 
             alt="Tamarind falls hiking trip - full day" 
@@ -219,7 +219,7 @@
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img 
             src="img/activity-4.jpg" 
             alt="The blue marine discovery quest" 
@@ -254,7 +254,7 @@
         >
         <input 
           type="text" 
-          class="input modal__input" 
+          class="input modal__input mask-phone" 
           placeholder="Phone Number*"
           name="phone"
           required

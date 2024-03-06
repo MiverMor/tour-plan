@@ -54,20 +54,29 @@ function closeModal(event) {
 // Обработка формы
 $(".form").each(function () {
   $(this).validate({
-  errorClass: "invalid",
-  messages: {
-    name: {
-      required: "Укажите имя",
-      minlength: "Имя должно быть не короче 2 букв",
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Укажите имя",
+        minlength: "Имя должно быть не короче 2 букв",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "Телефон обязателен",
+      },
     },
-    email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
-    },
-    phone: {
-      required: "Телефон обязателен",
-    },
-  },
+  });
 });
+
+// Маска для номера телефона с помощью плагина jQuery Mask Input
+$(document).ready(function(){
+  $(".mask-phone").mask("+7 (000) 000-00-00");
 });
+
+// Инициализация библиотеки для анимации
+AOS.init();
+
 });

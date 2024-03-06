@@ -143,7 +143,7 @@
             <div class="footer__input-group">
               <input 
                 type="text" 
-                class="input footer__input" 
+                class="input footer__input mask-phone" 
                 placeholder="Phone Number*"
                 name="phone"
                 required
@@ -171,6 +171,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
